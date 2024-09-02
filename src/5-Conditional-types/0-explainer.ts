@@ -106,6 +106,6 @@ type ExtractParams<S> = S extends MyGeneric<infer A, infer B> ? [A, B] : never;
 type EP1 = ExtractParams<MyGeneric<number, string>>;
 
 // Variable assignment
-type Fn<I> = SuperExpensiveComputation<I> extends infer Result
-  ? [Result]
-  : never;
+// type Fn<I> = SuperExpensiveComputation<I> extends infer Result
+//   ? [Result]
+//   : never;
